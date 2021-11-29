@@ -1,11 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
+
+const logos = [
+  require('./images/swm-1.png'),
+  require('./images/swm-2.png'),
+  require('./images/swm-3.png'),
+  require('./images/swm-4.png'),
+]
 
 export default function App() {
+  const [idx, setIdx] = useState(0);
+
+  const handlePress = () => {
+    setIdx((idx + 1) % logos.length);
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <TouchableOpacity onPress={handlePress}>
+        <Image source={logos[idx]} style={styles.image} />
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,4 +33,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image: {
+    width: 200,
+    resizeMode: 'contain',
+  }
 });
