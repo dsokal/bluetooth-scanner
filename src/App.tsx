@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 
 const logos = [
-  require('./images/swm-1.png'),
-  require('./images/swm-2.png'),
-  require('./images/swm-3.png'),
-  require('./images/swm-4.png'),
-]
+  require('../images/swm-1.png'),
+  require('../images/swm-2.png'),
+  require('../images/swm-3.png'),
+  require('../images/swm-4.png'),
+];
 
 export default function App() {
   const [idx, setIdx] = useState(0);
@@ -36,5 +36,5 @@ const styles = StyleSheet.create({
   image: {
     width: 200,
     resizeMode: 'contain',
-  }
+  },
 });
