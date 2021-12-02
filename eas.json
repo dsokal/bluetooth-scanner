@@ -25,6 +25,13 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleId": "dominik.sokal@swmansion.com",
+        "appleTeamId": "J5FM626PE2",
+        "companyName": "Software Mansion",
+        "appName": "foobar - bluetooth scanner"
+      }
+    }
   }
 }
