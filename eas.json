@@ -38,6 +38,7 @@
         "releaseStatus": "draft"
       },
       "ios": {
+        "ascAppId": "1598331531",
         "appleId": "dominik.sokal@swmansion.com",
         "appleTeamId": "J5FM626PE2",
         "companyName": "Software Mansion",
