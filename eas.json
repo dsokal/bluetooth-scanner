@@ -32,6 +32,11 @@
   },
   "submit": {
     "production": {
+      "android": {
+        "serviceAccountKeyPath": "/Users/dsokal/apps/foobar/secrets~/android-key.json",
+        "track": "internal",
+        "releaseStatus": "draft"
+      },
       "ios": {
         "appleId": "dominik.sokal@swmansion.com",
         "appleTeamId": "J5FM626PE2",
