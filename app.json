@@ -10,7 +10,7 @@
       "buildNumber": "2"
     },
     "android": {
-      "versionCode": 3
+      "versionCode": 4
     }
   },
   "name": "foobar"
