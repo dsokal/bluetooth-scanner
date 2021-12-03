@@ -21,7 +21,13 @@
       "distribution": "internal"
     },
     "production": {
-      "extends": "base"
+      "extends": "base",
+      "android": {
+        "autoIncrement": "versionCode"
+      },
+      "ios": {
+        "autoIncrement": "buildNumber"
+      }
     }
   },
   "submit": {
