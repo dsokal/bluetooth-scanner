@@ -8,6 +8,9 @@
     ],
     "ios": {
       "buildNumber": "2"
+    },
+    "android": {
+      "versionCode": 3
     }
   },
   "name": "foobar"
